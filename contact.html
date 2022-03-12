@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Jakrep Website</title>
+		<style type="text/css" media="all">
+		body {
+			background-color: #AAAAAA;
+			width: 960px;
+			border: 4px double black;
+			border-radius: 2px;
+			font-family: sans-serif;
+			}
+		@font-face {
+			font-family: typographica;
+			src: url('typographica.otf') format('truetype');
+			}
+		@font-face {
+			font-family: pixel;
+			src: url('pixel.ttf') format('truetype');
+			}
+		@font-face {
+			font-family: altona;
+			src: url('altona-sans.ttf') format('truetype');
+			}
+		@font-face {
+			font-family: Pink Chicken;
+			src: url('pink_chicken.ttf') format('truetype');
+			}
+		.container {
+			width: 960px;
+			margin: auto;
+			overflow: auto;
+			background: #000630;
+			color: white;
+			border-bottom: 3px solid black;
+			}
+		.header {
+			font-family: arial;
+			background-image: linear-gradient(to bottom left, #000000, #606060);
+			}
+		.header h1 {
+			padding: 8px;
+			font-size: 45px;
+			margin: auto;
+			font-family: typographica;
+			font-weight: bold;
+			}
+		.header ul li {
+			display: inline-block;
+			margin-left: 19px;
+			font-size: 20px;
+			margin: 1px;
+			}
+		.header a {
+			padding: 8px;
+			text-decoration: none;
+			background: maroon;
+			color: white;
+			font-weight: bold;
+			}
+		.header a:hover {
+			background-color: red;
+			color: white;
+			}
+		.runningtext {
+			background-color: maroon;
+			color: cyan;
+			font-weight: bold;
+			font-size: 16px;
+			padding: 6px;
+			font-family: sans-serif;
+			}
+		.runningtext a {
+			text-decoration: none;
+			background-color: red;
+			font-size: 18px;
+			border: 20px;
+			padding: 4px;
+			color: white;
+			border-radius: 9px;
+			font-family: sans-serif;
+			}
+		.form {
+			width: 960px;
+			height: 480px;
+			background-color:#000835;
+			border-top: 6px solid black;
+			text-align: center;
+			font-family: sans-serif;
+			}
+		.form p label {
+			font-weight: bold;
+			font-size: 18px;
+			color: #C5C5C5;
+			margin: 1px;
+			}
+		.form input {
+			width: 280px;
+			height: 28px;
+			margin: 1px;
+			position: relative;
+			border: 1px solid cyan;
+			border-radius: 2px;
+			background: black;
+			color: white;
+			}
+		.form textarea {
+			width: 360px;
+			height: 99px;
+			border: 1.5px double white;
+			border-radius: 10px 0px 10px 0px;
+			background: black;
+			color: white;
+			}
+		.send input {
+			width: 68px;
+			height: 28px;
+			text-align: center;
+			border: 1px solid white;
+			border-radius: 8px;
+			background: royalblue;
+			color: white;
+			font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 align="right">harjakrepp website</h1>
+				<ul>
+					<li><a href="index.html">Home</li></a>
+					<li><a href="aboutme.html">About Me</li></a>
+					<li><a href="#" style="background:red">Contact Us</li></a>
+				</ul>
+				<div class="runningtext">
+				    <marquee>Subscribe Channel <a href="">HarJaCraft</marquee>
+			    </div>
+			</div>
+			<div class="form">
+				<h1>Kirim Masukan Anda</h1>
+				<form action="contact.php" method="POST">
+					<p>
+						<label>NAMA :</label>
+						<input type="text" placeholder="Tukiyem"/>
+					</p>
+					<p>
+						<label>EMAIL :</label>
+						<input type="text" placeholder="blablabla123@gmail.com"/>
+					</p> 
+					<p><label>PESAN</label></p>
+					<p>
+						<textarea></textarea>
+					</p>
+					<div class="send">
+						<input type="submit" value="kirim"/>
+					</div>
+				</form>
+	</body>
+</html>
